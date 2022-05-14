@@ -69,3 +69,6 @@ ENGINE = InnoDB;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+SELECT * from tb_temas inner join tb_postagem
+on tb_temas.id = tb_postagem.tb_temas_id WHERE tb_temas.descricao = "java";
